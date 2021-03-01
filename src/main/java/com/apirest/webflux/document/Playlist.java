@@ -5,6 +5,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Playlist {
+	
+	public Playlist(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
 
 	@Id
 	private String id;
